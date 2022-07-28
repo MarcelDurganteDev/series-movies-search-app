@@ -1,0 +1,50 @@
+// Background colors
+
+$bg-deepdark: #000000;
+$bg-dark: #212121;
+$bg-red: #E53935;
+$bg-blue: #090f61;
+$bg-gray-light: #838383;
+
+$bg-white: #fafafa;
+$bg-gray: #383254;
+$bg-dark-accent: #26033e;
+$bg-light: #fff;
+$bg-offwhite: #dcd9de;
+$accent-light: #c685fd;
+$accent-dark: #9c32f1;
+$bg-offwhite-opacity: rgba(220, 217, 222, 0.179);
+$bg-green: #1c9e49;
+$bg-gold: #9b6304;
+$bg-gold-light: #F7EF81;
+
+
+// Line colors
+
+$line-offwhite: #e6e6e6;
+
+// Text colors
+
+$text-dark: #26033e;
+$text-lightgray: #dcd9de;
+$text-gray: #666666;
+$text-darkgray: #333333;
+
+// Border radius
+
+$border: 24px;
+$border-xl: 40px;
+// Box shadow
+
+$boxshadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+  rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; //#38 Tailwind
+// $boxshadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px; //#59 Shopify
+
+$boxshadow-light: rgba(232, 226, 226, 0.332) 0px 8px 24px;
+// Linear gradient
+
+$primary-gradient: linear-gradient(
+  135deg,
+  rgba(198, 133, 253, 1) 0%,
+  rgba(156, 50, 241, 1) 100%
+);

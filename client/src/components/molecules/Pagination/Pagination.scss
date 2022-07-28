@@ -1,0 +1,119 @@
+@use '../../../sass/abstracts/variables' as v;
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  width: 100%;
+  color: v.$text-lightgray;
+  background-color: v.$bg-dark;
+  position: fixed;
+  bottom: 0px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.left-arrow,
+.right-arrow {
+  width: 20px;
+  height: 20px;
+  fill: v.$bg-white;
+  color: v.$bg-white;
+}
+
+.page-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  margin: 0 20px;
+  border-radius: 50%;
+  background-color: v.$bg-red;
+  color: v.$bg-white;
+}
+
+// ====== RESPONSIVENESS ========
+// 1280
+
+@media screen and (max-width: 1280px) {
+  .pagination-container {
+    height: 55px;
+    width: 100%;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    width: 20px;
+    height: 20px;
+  }
+
+  .page-number {
+    width: 25px;
+    height: 25px;
+    margin: 0 20px;
+    border-radius: 50%;
+  }
+}
+
+// 1007
+
+@media screen and (max-width: 1007px) {
+  .pagination-container {
+    height: 55px;
+    width: 100%;
+  }
+
+  .page-number {
+    margin: 0 10px;
+    border-radius: 50%;
+  }
+}
+
+//640
+
+@media screen and (max-width: 680px) {
+  .page-number {
+    margin: 0 8px;
+    border-radius: 50%;
+  }
+}
+// 380
+
+@media screen and (max-width: 500px) {
+  .left-arrow,
+  .right-arrow {
+    width: 30px;
+    height: 30px;
+  }
+  .page-number {
+    width: 0px;
+    font-size: 0px;
+  }
+}
+
+/* 
+@media screen and (max-width: 1280px) {
+ 
+}
+
+// 1007
+
+@media screen and (max-width: 1007px) {
+  
+}
+
+//640
+
+@media screen and (max-width: 680px) {
+   
+}
+// 380
+
+@media screen and (max-width: 500px) {
+
+
+} */

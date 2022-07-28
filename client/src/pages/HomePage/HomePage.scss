@@ -1,0 +1,77 @@
+@use '../../sass/abstracts/variables' as v;
+
+.homepage-wrapper {
+  height: calc(100vh - 260px);
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  bottom: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+
+}
+
+.movies-container, .series-container, .movies-series-container {
+  display: flex;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 2, 1fr;
+  justify-content: center;
+  align-items: center;
+  background-color: v.$bg-dark;
+  max-width: 1200px;
+  height: auto;
+  overflow: wrap;
+  margin-bottom: 250px;
+}
+
+@supports (display: grid) {
+  .movies-container, .series-container, .movies-series-container {
+    display: grid;
+    max-width: none;
+    margin:0;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .movies-container,
+  .series-container,
+  .movies-series-container {
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 1200px;
+  }
+}
+
+@media screen and (max-width: 1007px) {
+  .movies-container,
+  .series-container,
+  .movies-series-container {
+    grid-template-columns: repeat(4, 1fr);
+        max-width: 1007px;
+
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .movies-container,
+  .series-container,
+  .movies-series-container {
+    grid-template-columns: repeat(3, 1fr);
+        max-width: 640px;
+
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .movies-container,
+  .series-container,
+  .movies-series-container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 380px;
+  }
+}

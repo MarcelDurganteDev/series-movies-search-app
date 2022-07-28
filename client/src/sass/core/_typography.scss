@@ -1,0 +1,32 @@
+@use '../abstracts/variables' as *;
+// Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Font sizes
+
+$text-xs: 10px;
+$text-sm: 12px;
+$text-md: 16px;
+$text-lg: 24px;
+$text-xl: 32px;
+$text-2xl: 40px;
+$text-3xl: 5rem;
+
+// Headings
+
+.heading1 {
+  color: $text-dark;
+  font-size: $text-xl;
+  font-weight: 700;
+}
+.heading2 {
+  color: $text-dark;
+  font-size: $text-lg;
+  font-weight: 700;
+}
+.heading3 {
+  color: $text-dark;
+  font-size: $text-md;
+  font-weight: 600;
+}

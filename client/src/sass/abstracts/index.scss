@@ -1,0 +1,11 @@
+@forward './mixins';
+@forward './variables';
+
+a { 
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    font-weight: bold;
+    scale: 1.1;
+  }
+}

@@ -1,0 +1,128 @@
+@use '../../../sass/abstracts/variables' as v;
+@use '../../../sass/core/typography' as t;
+
+.card-wrapper {
+  position: relative;
+  width: 170px;
+  margin: 1.1rem 1rem;
+  border-radius: 3px;
+  color: v.$bg-white;
+  background-color: v.$bg-dark;
+  // hide the overflow in the movie card also for the overlay effect to work properly
+  overflow: hidden;
+  img {
+    max-width: 100%;
+  }
+}
+
+.card-over {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: first baseline;
+  align-items: center;
+  height: 170px;
+  line-height: normal;
+  font-size: t.$text-sm;
+  letter-spacing: 2px;
+  position: absolute;
+  padding-left: 1rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  h4 {
+    font-weight: bolder;
+    padding-bottom: 1rem;
+  }
+  transform: translateY(80%);
+}
+
+.card-wrapper:hover .card-over {
+  transition: all 0.4s ease-in-out;
+  transform: translateY(0%);
+  h3 {
+    padding: 0;
+  }
+}
+
+.card-icon {
+  display: inline-block;
+  width: 10px;
+  color: v.$bg-red;
+  margin-right: 5px;
+}
+
+.description {
+  text-align: start;
+  line-height: 12px;
+}
+
+// 1280 
+
+
+@media screen and (max-width: 1280px) {
+  .card-wrapper {
+  width: 160px;
+  margin: 1rem ;
+
+}
+}
+
+// 1007
+
+@media screen and (max-width: 1007px) {
+  .card-wrapper {
+  width: 140px;
+  margin: 0.5rem ;
+}
+
+}
+
+//640
+
+@media screen and (max-width: 640px) {
+  .card-wrapper {
+  width: 120px;
+  margin: 0.5rem ;
+}
+
+}
+
+
+// 380
+
+@media screen and (max-width: 380px) {
+  .card-wrapper {
+  width: 100px;
+  margin: 0.5rem ;
+}
+
+.card-over {
+ 
+  height: 130px;
+  font-size: t.$text-xs;
+  letter-spacing: 0px;
+  padding-left: 5px;
+
+  h4 {
+    font-weight: 50;
+    padding-bottom: 0.5rem;
+  }
+  transform: translateY(90%);
+}
+
+.description {
+  text-align: start;
+  line-height: 10px;
+}
+}
+
+
+
+
+
+
+
+
+

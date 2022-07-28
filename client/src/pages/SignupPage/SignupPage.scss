@@ -1,0 +1,150 @@
+@use '../../sass/abstracts/variables' as v;
+@use '../../sass/core/typography' as t;
+
+.signup-container {
+  height: calc(100vh - 250px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem 0.5rem;
+  background-color: v.$bg-dark;
+}
+
+.signup-form {
+  width: 100%;
+  max-width: 420px;
+  min-width: 300px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+  margin-bottom: 110px;
+
+  input[type='text'],
+  input[type='password'],
+  input[type='email'] {
+    min-width: 300px;
+    font-size: 22px;
+    padding: 0.2rem;
+    border-radius: 2rem;
+    border: 0;
+    padding-left: 1.5rem;
+  }
+
+  textarea {
+    font-size: 22px;
+    padding: 0.2rem;
+    border-radius: 2rem;
+    border: 0;
+  }
+
+  button {
+    font-size: 22px;
+    padding: 0.2rem;
+    border-radius: 2rem;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    background-color: v.$bg-red;
+    width: 50%;
+  }
+
+  label,
+  button {
+    margin-top: 1rem;
+  }
+
+  button {
+    padding: 0.5rem;
+    color: v.$bg-white;
+  }
+
+  h1 {
+    font-size: t.$text-xl;
+    margin-bottom: 1rem;
+  }
+}
+
+.signup-form-fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  padding-bottom: 1rem;
+}
+
+.login-anchor-tags,
+.login-anchor-tags:visited {
+  color: #fff;
+}
+
+
+.login-anchor-tag-need-account {
+  color: v.$bg-dark;
+  text-decoration: none;
+}
+
+.instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: v.$bg-dark;
+    color: v.$text-lightgray;
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+}
+
+.instructions > svg {
+    margin-right: 0.25rem;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.hide {
+    display: none;
+}
+
+.valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+}
+
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
+
+.errmsg {
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.login-signup-btn {
+    display: inline-block;
+    font-size: 22px;
+    padding: 0.2rem;
+    border-radius: 2rem;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: v.$bg-green;
+    width: 100%;
+    margin-bottom: 15px;
+
+}

@@ -1,0 +1,288 @@
+@use '../../../sass/abstracts/variables' as v;
+@use '../../../sass/core/typography' as t;
+
+.search-bar {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  color: v.$text-lightgray;
+  background-color: v.$bg-red;
+  position: fixed;
+  top: 60px;
+  z-index: 1;
+}
+
+.input-label {
+  border: none;
+  color: v.$text-lightgray;
+  outline: none;
+  position: relative;
+  display: flex;
+
+  img {
+    width: 15px;
+    position: absolute;
+    top: 10px;
+    left: 70px;
+  }
+
+  input {
+    width: 60rem;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 50px;
+    padding-left: 70px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 25px;
+    background-color: v.$bg-white;
+    color: v.$text-dark;
+    font-size: t.$text-sm;
+    font-weight: bold;
+    letter-spacing: 1px;
+    outline: none;
+  }
+}
+
+.calendar-input {
+  position: relative;
+  margin-left: 50px;
+
+  img {
+    width: 15px;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+  }
+
+  input {
+    width: 10rem;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 20px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    outline: none;
+  }
+}
+
+// ====== RESPONSIVENESS ========
+// 1280
+
+@media screen and (max-width: 1280px) {
+  .search-bar {
+    grid-template-columns: 75% 25%;
+
+    height: 60px;
+    width: 100%;
+    top: 60px;
+  }
+
+  .input-label {
+    img {
+      width: 15px;
+      top: 10px;
+      left: 70px;
+    }
+
+    input {
+      width: 60rem;
+      height: 25px;
+      margin-top: 5px;
+      margin-left: 50px;
+      padding-left: 40px;
+      padding-bottom: 5px;
+      border-radius: 25px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .calendar-input {
+    img {
+      width: 15px;
+      top: 10px;
+      left: 30px;
+    }
+
+    input {
+      width: 10rem;
+      height: 25px;
+      margin-top: 5px;
+      margin-left: 15px;
+      padding-bottom: 5px;
+      padding-left: 30px;
+      padding-bottom: 5px;
+      border-radius: 25px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      outline: none;
+    }
+  }
+}
+
+// 1007
+
+@media screen and (max-width: 1007px) {
+  .search-bar {
+    grid-template-columns: 70% 30%;
+    height: 50px;
+    width: 100%;
+    top: 60px;
+  }
+
+  .input-label {
+    img {
+      width: 15px;
+      top: 10px;
+      left: 60px;
+    }
+
+    input {
+      width: 40rem;
+      height: 25px;
+      margin-top: 5px;
+      margin-left: 50px;
+      padding-left: 40px;
+      padding-bottom: 5px;
+      border-radius: 25px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .calendar-input {
+    max-width: 10%;
+
+    img {
+      width: 15px;
+      top: 10px;
+      left: 20px;
+    }
+
+    input {
+      width: 8rem;
+      height: 25px;
+      margin-top: 5px;
+      margin-left: 10px;
+      padding-bottom: 5px;
+      padding-left: 20px;
+      padding-bottom: 5px;
+      border-radius: 25px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      outline: none;
+    }
+  }
+}
+
+//640
+
+@media screen and (max-width: 680px) {
+  .search-bar {
+    grid-template-columns: 60% 40%;
+    height: 40px;
+    width: 100%;
+    top: 40px;
+  }
+
+  .input-label {
+    img {
+      width: 15px;
+      top: 5px;
+      left: 60px;
+    }
+
+    input {
+      width: 15rem;
+      height: 25px;
+      margin-top: 0px;
+      margin-left: 50px;
+      padding-left: 40px;
+      padding-bottom: 5px;
+      border-radius: 25px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .calendar-input {
+    max-width: 10%;
+
+    img {
+      width: 15px;
+      top: 10px;
+      left: 10px;
+    }
+
+    input {
+      width: 8rem;
+      height: 25px;
+      margin-top: 5px;
+      margin-left: 0px;
+      padding-bottom: 5px;
+      padding-left: 20px;
+      padding-bottom: 5px;
+      border-radius: 25px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      outline: none;
+    }
+  }
+}
+// 380
+
+@media screen and (max-width: 500px) {
+  .search-bar {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 0;
+    height: 80px;
+    width: 100%;
+    top: 40px;
+  }
+
+  .input-label {
+    img {
+      width: 15px;
+      top: 5px;
+      left: 40px;
+    }
+
+    input {
+      width: 20rem;
+      height: 25px;
+      margin-top: 0px;
+      margin-left: 30px;
+      padding-left: 30px;
+      padding-bottom: 5px;
+      border-radius: 25px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .calendar-input {
+    max-width: 10%;
+    left: px;
+
+    img {
+      width: 15px;
+      top: 10px;
+      left: 10px;
+    }
+
+    input {
+      width: 9rem;
+      height: 25px;
+      border-radius: 25px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      outline: none;
+    }
+  }
+}
