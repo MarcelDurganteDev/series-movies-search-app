@@ -18,7 +18,7 @@ const MoviesList = props => {
 
   useEffect(() => {
     renderMovies(content);
-  });
+  }, [content]);
 
   const moviesPerPage = 10;
   const pagesVisited = pageNumber * moviesPerPage;

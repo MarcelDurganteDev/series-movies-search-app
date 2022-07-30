@@ -18,7 +18,7 @@ const SeriesList = props => {
 
   useEffect(() => {
     renderSeries(content);
-  }, []);
+  }, [content]);
 
   const seriesPerPage = 10;
   const pagesVisited = pageNumber * seriesPerPage;
