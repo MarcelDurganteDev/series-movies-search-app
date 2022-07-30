@@ -32,7 +32,7 @@ function Header() {
     } else if (location.pathname === HOME) {
       setLocationPage('home');
     }
-  }, [[], location]);
+  }, [location.pathname]);
 
   const handleLogout = () => {
     window.localStorage.clear();

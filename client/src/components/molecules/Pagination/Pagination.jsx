@@ -21,7 +21,7 @@ function Pagination(props) {
     let length = pageNumbers;
     const range = Array.from({ length }, (_, idx) => idx);
     setRange(range);
-  }, [pageCount]);
+  }, [pageNumbers]);
 
   return (
     <div className='pagination-container'>

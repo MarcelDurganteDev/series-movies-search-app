@@ -6,8 +6,6 @@ import MoviesList from '../../components/organism/MoviesList/MoviesList';
 import SeriesList from '../../components/organism/SeriesList/SeriesList';
 import MoviesAndSeries from '../../components/organism/MoviesAndSeries/MoviesAndSeries';
 import ErrorPage from '../ErrorPage/ErrorPage';
-import IsLoading from '../../components/atoms/IsLoading/IsLoading';
-
 import './HomePage.scss';
 
 function HomePage() {
