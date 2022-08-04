@@ -54,7 +54,7 @@
     justify-content: center;
     align-self: center;
     align-items: center;
-    background-color: v.$bg-red;
+    background-color: v.$bg-green;
     width: 50%;
   }
 
@@ -69,8 +69,9 @@
   }
 
   h1 {
-    font-size: t.$text-xl;
+    font-size: v.$h1-large;
     margin-bottom: 1rem;
+    color: v.$bg-white;
   }
 }
 
@@ -80,6 +81,9 @@
   justify-content: center;
   flex-grow: 1;
   padding-bottom: 1rem;
+  color: v.$bg-offwhite;
+
+
 }
 
 .login-anchor-tags,
